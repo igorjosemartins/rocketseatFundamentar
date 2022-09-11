@@ -1,0 +1,129 @@
+<!--
+    Hyperlinks - Elemento Âncora: <a>
+
+        + Anatomia
+
+        + Atributos:
+            - globais
+            - href
+                - para onde o iremos, quando clicarmos no link?
+                    - url completa
+                    - fragmento (direciona a página pra seção escolhida)
+                    - email
+                    - telefone
+                    - e outros.
+                - download (download do link/pagina)
+                - target (direciona para algum lugar)
+                    - _self (padrão)
+                    - _blank (abre o link em uma nova página)
+-->
+
+<!-- url completa -->
+<a href="https://google.com" target="_blank">Google</a> 
+
+
+<!-- email, telefone... -->
+<p>Encontre-me</p>
+
+<ul>
+    <li><a href="https://google.com">Website</a></li>
+    <li><a href="mailto:igorjosemartins01@gmail.com">Email</a></li>
+    <li><a href="tel:+48991920998">Telefone</a></li>
+</ul>
+
+<br><br>
+
+<!-- fragmento -->
+
+<p>Saiba mais</p>
+<ul>
+<li><a href="#about">Sobre mim</a></li>
+<li><a href="#history">História</a></li>
+<li><a href="#works">Trabalhos</a></li>
+</ul>
+
+
+<h1 id="about">Sobre mim</h1>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni dicta neque, deserunt soluta ut ullam minima ipsam nam eius sed fuga voluptate minus doloribus quibusdam excepturi enim cumque saepe fugit!
+
+<h2 id="history">História</h2>
+
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, atque quibusdam. Quisquam placeat fugit repudiandae cum hic eveniet mollitia alias ullam laborum temporibus distinctio cupiditate, consequatur nam nulla modi illum?
+
+<h2 id="works">Trabalhos</h2>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, distinctio. Aliquam, inventore qui! Blanditiis error, rerum architecto totam quaerat placeat quasi odit facilis esse eaque, magni sit vel est et.
+
+<br><br><br>
+
+<!--
+    Conteúdo dos hyperlinks
+
+    - qualquer conteúdo
+-->
+
+<a href="http://google.com" title="ir para google">
+    <h1>Google</h1>
+    <p>claro que posso</p>
+    <!-- <img src="https://source.unsplash.com/random" alt=""> -->
+</a>
+
+<br><br><br>
+
+<!--
+    URLs e Caminhos dos arquivos
+    
+    -Uniform Resource Locator
+        - https://google.com
+        - Sequência de texto que define onde algo está localizado
+        na Web
+    - URL usam caminhos para encontrar arquivos
+
+    - Caminhos dos arquivos
+        - Onde, no explorador de arquivos, um recurso está localizado
+-->
+
+<!-- via URL -->
+
+<a href="https://google.com" target="_blank">Abrir o google</a>
+<br><br>
+<a href="basico2.html">Abrir outro arquivo</a>
+
+<br><br><br>
+
+
+<!-- 
+    Como navegar pelos caminhos?
+
+        - mesmo diretório
+        - entrando em diretórios
+        - saindo de diretórios
+        - diretório raiz (root ou pai)
+-->
+
+<p><a href="hyperlinks.html">Entrando em outro arquivo de mesmo diretório</a></p>
+
+<p><a href="entrando/teste.html">Entrando em um arquivo em outro diretório</a></p>
+
+<p><a href="../saindo/teste2.html">Saindo do diretório e entrando em outro</a></p>
+
+<br>
+
+
+<!--
+    URLs absolutos x relativos
+
+    - Absolutos
+        - inclui protocolo e nome de domínio (vai para o endereço)
+            - https://google.com
+        - sempre apontará para o mesmo local, pois é absoluto
+
+    - Relativos
+        - relativo à página aberto no momento (relativo a pasta/diretório)
+        - apontará para lugares diferentes
+-->
+
+<p><a href="https://google.com" target="_blank">Absoluto: ir para o google</a></p>
+
+<p><a href="google.com">Relativo: ir para o google</a></p>
+<!-- não existe google.com na minha pasta "hyperlinks"-->

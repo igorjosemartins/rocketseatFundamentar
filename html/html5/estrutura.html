@@ -1,0 +1,346 @@
+<!--
+    Estrutura Padrão de um HTML
+
+    - cabeçalho <header>
+    - navegação <nav>
+    - conteúdo principal <main>
+    - barra lateral <aside>
+    - rodapé <footer>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        logo
+
+        <nav>
+            <ul>
+                <li>
+                    Item
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        conteúdo principal
+    </main>
+
+    <aside>
+        parte lateral
+    </aside>
+
+    <footer>
+        rodapé
+    </footer>
+
+</body>
+
+</html>
+
+
+
+
+
+<!--
+    <header></header>
+
+    - Pode ser utilizado em outros elementos semânticos como article,section
+    - Não podemos por header dentro do header/footer
+    - Podemos usar múltiplos headers
+    - Não possui atributos específicos
+
+    Ex: 
+-->
+
+<body>
+
+    <header>
+        logo
+        <nav></nav>
+    </header>
+
+    <section>
+        <header>
+            <h2>essa é uma seção</h2>
+            <p>para falar mais da seção</p>
+        </header>
+    </section>
+
+    <section>
+        <header></header>
+    </section>
+
+</body>
+
+
+
+
+<!--
+    <nav></nav>
+
+    - Representa uma seção da página que aponta para outra página ou outra áreas
+    - Representa alguma navegação especial/particular do site
+    - Não possuem atributos específicos, apenas os globais
+    
+    Ex:
+-->
+
+<header>
+    <nav>
+        <ul><li></li></ul>
+    </nav>
+</header>
+
+<article>
+    <section>
+        <header>
+            <nav></nav>
+        </header>
+    </section>
+</article>
+
+
+
+
+<!--
+    <main></main>
+
+    - Um por página sempre no <body>
+    - Não possuem atributos específicos, apenas os globais
+
+    
+    
+    <article></article>
+
+    - Composição independente do documento
+    - Não possuem atributos específicos, apenas os globais
+
+-->
+
+<body>
+    
+    <main>
+
+        <h1>Receitas</h1>
+        <p>Essa é uma página de receitas</p>
+
+        <article>
+            <h2>Receita de bolo de maçã</h2>
+            <p>Essa é uma receita de bolo de maçã</p>
+        </article>
+        
+        <article>
+            <h2>Receita de bolo de limão</h2>
+            <p>Essa é uma receita de bolo de limão</p>
+        </article>
+    
+    </main>
+</body>
+
+<br><br><br><br><br>
+
+
+
+
+<!--
+    <aside></aside>
+
+    - Conteúdos levemente relacionados ao conteúdo principal
+        - explicações
+        - glossários
+        - links extras
+        - biografia do autor
+        - informações de perfil
+    
+    - atributos: apenas globais
+
+    Ex:
+-->
+
+<header>
+    <div>
+        <strong>Construtores & Cia.</strong>
+        <span>Um portal de construção</span>
+    </div>
+
+    <nav>
+        <ul>
+            <li>Homepage</li>
+            <li>Sobre</li>
+            <li>Contato</li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h1>Como construir uma casa</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dicta praesentium consequuntur amet itaque! Tenetur in, sapiente id fugiat, quaerat odit delectus dolorem at nemo suscipit placeat veniam accusantium commodi.</p>
+
+            <ul>
+                <li>Tamanho do terreno: 302 m²</li>
+                <li>Área a ser construída: aproximadamente 120 m²</li>
+                <li>Padrão de construção: ??</li>
+            </ul>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iste, et dolore dicta accusantium nulla porro fuga sed expedita iusto consectetur ab corrupti possimus in reiciendis asperiores incidunt fugiat veniam!</p>
+        </article>
+
+
+        <!-- Glossário -->
+        <aside>
+            <h3>Glossário</h3>
+            <!-- dl = description list-->
+            <dl>
+                <!-- dt = description title-->
+                <dt>Terraplanagem</dt>
+                <!-- dd = description -->
+                <dd>
+                    É o processo de terraplanar. Se a terra é plana, não precisaria fazer isso.
+                </dd>
+
+                <dt>Termo 2</dt>
+                <dd>
+                    Descrição
+                </dd>
+            </dl>
+        </aside>
+
+    </main>
+
+    <hr>
+
+    <!-- Conteúdo relacionado -->
+    <aside>
+        <h3>Links Relacionados</h3>
+        <ul>
+            <li><a href="">Terraplanar com sucesso</a></li>
+            <li><a href="">10 passos para construir sua casa.</a></li>
+            <li><a href="">Lorem ipsum dolor</a></li>
+        </ul>
+    </aside>
+
+    <!-- publicidade relacionada -->
+    <aside>
+        <strong>Oferecimento: Lorem ipsum</strong>
+    </aside>
+
+    <hr>
+
+    <footer>
+        <em>Copyright Author - 2022</em>
+    </footer>
+</header>
+
+
+<br><br><br><br><br>
+
+
+<!--
+    <footer></footer>
+
+    - Geralmente no final da página
+        - informações do autor, copyright, contato, sitemap, voltar ao topo
+    - Atributos: globais
+
+    Ex:
+-->
+
+<article>
+    <h1>Sobre nós</h1>
+    <p>Formamos um time de profissionais: </p>
+
+    <ol>
+        <li>Lorem ipsum</li>
+        <li>dolor sit</li>
+        <li>amet consectetur</li>
+        <li>adipisicing elit</li>
+    </ol>
+
+    <h2>Quem são</h2>
+    <ul>
+        <li>Lorem ipsum </li>
+        <li>dolor sit</li>
+        <li>amet consectetur</li>
+        <li>adipisicing elit</li>
+        <li>dolor possimus</li>
+        <li>necessitatibus numquam</li>
+        <li>quo blanditiis</li>
+    </ul>
+
+</article>
+
+<footer>
+    <p>© 2022 Lorem ipsum</p>
+</footer>
+
+<br><br><br><br><br>
+
+
+
+<!--
+    <section></section>
+
+    - Geralmente tem um título e o conteúdo
+    - Atributos apenas globais
+-->
+
+<section>
+    <!-- Título -->
+    <h2>Contato</h2>
+    <!-- conteúdo-->
+    <p>Fale conosco</p>
+</section>
+
+<!-- outro exemplo -->
+
+<head>
+    <nav></nav>
+</head>
+
+<article>
+    <h2>Receita 1</h2>
+    <p>Como fazer a receita</p>
+
+    <section>
+        <h3>Modo de preparo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    </section>
+</article>
+
+<br><br><br><br><br>
+
+
+
+<!--
+    Elementos não semânticos, para uso genéricos
+
+        <div></div>
+            - Usado se não conseguir achar um elemento de BLOCO semântico
+
+        <span></span>
+            - Usado se não conseguir achar um elemento de TEXTO semântico
+        
+    em ambas, use atributos globais como id e class para entregar maior significado
+-->
+
+<!-- exemplo do uso da tag <div></div>-->
+<!-- ao invés de usarmos uma section que só tem um contexto relacionado a página, usamos a div que tem relacão ao texto global do site -->
+<div class="cart">
+    <h2>Carrinho de compras</h2>
+</div>
+
+
+<!-- exemplo do uso da tag <span></span>-->
+<!-- ao invés de usarmos <strong>, usamos <span> com uma class para darmos mais usabilidade na hora de estilizar -->
+<h1>Título <span class="destaque">destacado</span></h1>

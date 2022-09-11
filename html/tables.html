@@ -1,0 +1,149 @@
+<!--
+    <table>
+
+    Prós
+    - Visualização de dados via linhas e colunas.
+    - Boa acessibilidade para leitura dos dados.
+
+    Contras
+    - Pouco flexível
+    - Precisa de estilização para melhor visualização
+
+    Não usar
+    - Para criar seu layout
+-->
+
+
+<!-- 
+    tabela básica 
+
+    <tr> = table row (linha)
+    <th> = table header (colunas)
+    <td> = descrição
+-->
+
+<table>
+    <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+    </tr>
+
+    <tr>
+        <td>Igor</td>
+        <td>20</td>
+    </tr>
+
+    <tr>
+        <td>Jonas</td>
+        <td>10</td>
+    </tr>
+
+</table>
+
+
+<br><br><br>
+
+
+<!--
+    table-head-body-foot
+
+    organização de tables
+
+    caption = descrição do que é aquela tabela
+
+    <thead>
+    <tbody>
+    <tfoot>
+-->
+
+
+<table>
+    <caption>Pessoas por idade</caption>
+
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Igor</td>
+            <td>20</td>
+        </tr>
+    
+        <tr>
+            <td>Jonas</td>
+            <td>10</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+            <tr>
+                <td>Total:</td>
+                <td>2 Pessoas</td>
+            </tr>
+    </tfoot>
+</table>
+
+
+<br><br><br>
+
+
+<!--
+    tabela complexa
+
+        2 Lojas
+            Quantos produtos foram produzidos, quantos vendidos
+            e agrupado por nome dos produtos
+    
+    rowspan = ocupar "x" linhas
+    colspan = ocupar "x" colunas
+    
+    colgroup = agrupar colunas
+-->
+
+<table>
+
+    <caption>Produzidos x Vendidos por Loja</caption>
+
+    <colgroup>
+        <col>
+        <col span="2" style="background-color: red">
+        <col span="2" style="background-color: green">
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2" scope="colgroup">Loja X</th>
+            <th colspan="2" scope="colgroup">Loja Y</th>
+        </tr>
+
+        <tr>
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th scope="row">Vassouras</th>
+            <td>50</td>
+            <td>30</td>
+            <td>20</td>
+            <td>20</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Baldes</th>
+            <td>10</td>
+            <td>10</td>
+            <td>30</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+</table>
