@@ -1,0 +1,16 @@
+p
+{
+    font-family: 'Tiro Gurmukhi', serif;
+    font-weight: normal;
+    font-style: oblique;
+    font-size: 2em;
+    font-variant: small-caps;
+    letter-spacing: 4px;
+    word-spacing: 4px;
+    line-height: 1.6;
+    text-transform: capitalize;
+    text-decoration: underline wavy red;
+    text-align: center;
+    text-shadow: 1px 1px 1px blue, 1px 1px 1px green;
+}
+

@@ -1,0 +1,28 @@
+/* 
+*  {
+    margin: 15px;
+}
+
+.container {
+    display: flex;
+    gap: .8rem;
+    justify-content: center;
+}
+
+.foto {
+    border: 2px solid;
+    height: 200px;
+    width: 200px;
+} */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+    justify-content: center;
+}
+
+img {
+    height: auto;
+    width: 30%;
+}
